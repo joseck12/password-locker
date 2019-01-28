@@ -1,5 +1,5 @@
 import unittest # Importing the unittest module
-# import pyperclip
+import pyperclip
 from user import User # Importing the user class
 
 class TestUser(unittest.TestCase):
@@ -10,14 +10,11 @@ class TestUser(unittest.TestCase):
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
     # Items up here .......
-
     def setUp(self):
         '''
         Set up method to run before each test cases.
         '''
         self.new_user = User("Tweeter", "Mercy", "0000") # create user object
-
-
     def test_init(self):
         '''
         test_init test case to test if the object is initialized properly
@@ -26,6 +23,7 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_User.account,"Tweeter")
         self.assertEqual(self.new_user.username,"Mercy")
         self.assertEqual(self.new_user.password,"0000")
+
     def test_save_user(self):
         '''
         test_save_user test case to test if the user object is saved into
