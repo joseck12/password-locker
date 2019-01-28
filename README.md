@@ -1,4 +1,5 @@
 ## Password-locker
+
 A python application that allows generating and storing of passwords for various accounts.
 
 ## Author Name
@@ -6,30 +7,32 @@ A python application that allows generating and storing of passwords for various
 Joseck Ogachi
 
 # Project Description
+
 This project will enable users to generate passwords for various accounts and the details stored. Users can generate one or multiple accounts.
 
 ## Technology
+
  This project runs on python3.6
 
 ### Prerequisites
 
 To install this project you need the following:
 
-```* A Github account```
+`* A Github account`
 
-```* A Terminal```
+`* A Terminal`
 
-```*Pyhon3.6```
+`*Pyhon3.6`
 
 ## Setup and Installation
 
 You must have a Github account,then follow the link below
 
-```https://github.com/joseck12/password-locker```
+`https://github.com/joseck12/password-locker`
 
  On your terminal type 'git clone' followed by the link below then run the command so as to get the project on your local computer.
 
-```https://github.com/joseck12/password-locker.git```
+`https://github.com/joseck12/password-locker.git`
 
 Open the project on your terminal and start the python shell
 
