@@ -42,5 +42,14 @@ class TestUser(unittest.TestCase):
             '''
             User.user_list = []
 
+    def test_delete_user(self):
+
+            self.new_user.save_user()
+            test_user = User("Tweeter", "Mercy", "0000") # new user
+            test_user.user()
+
+            self.new_contact.delete_contact()# Deleting a contact object
+            self.assertEqual(len(Contact.contact_list),
+
     if __name__ == '__main__':
     unittest.main()
