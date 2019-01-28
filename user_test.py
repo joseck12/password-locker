@@ -26,19 +26,6 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_User.account,"Tweeter")
         self.assertEqual(self.new_user.username,"Mercy")
         self.assertEqual(self.new_user.password,"0000")
-#
-    def test_save_multiple_user(self):
-            '''
-            test_save_multiple_contact to check if we can save multiple user
-            objects to our contact_list
-            '''
-            self.new_user.save_user()
-            test_user = UserUser("Tweeter", "Mercy", "0000") # new user
-            test_user.save_user()
-            self.assertEqual(len(User.user_list),2)
-    # setup and class creation up here
-
-
     def test_save_user(self):
         '''
         test_save_user test case to test if the user object is saved into
@@ -46,29 +33,40 @@ class TestUser(unittest.TestCase):
         '''
         self.new_user.save_user() # saving the new user
         self.assertEqual(len(User.user_list),1)
-
+        # setup and class creation up here
+    def tearDown(self):
+            '''
+            tearDown method that does clean up after each test case has run.
+            '''
+            User.user_list = []
+    def test_save_multiple_user(self):
+        '''
+        test_save_multiple_contact to check if we can save multiple user
+        objects to our contact_list
+        '''
+        self.new_user.save_user()
+        test_user = UserUser("Tweeter", "Mercy", "0000") # new user
+        test_user.save_user()
+        self.assertEqual(len(User.user_list),2)
     def test_delete_user(self):
-            self.new_user.save_user()
-            test_user = User("Tweeter", "Mercy", "0000") # new user
-            test_user.user()
+        self.new_user.save_user()
+        test_user = User("Tweeter", "Mercy", "0000") # new user
+        test_user.user()
 
-            self.new_user.delete_user()# Deleting a user object
-            self.assertEqual(len(User.user_list),
-
+        self.new_user.delete_user()# Deleting a user object
+        self.assertEqual(len(User.user_list),1)
     def test_find_user_by_account(self):
         '''
         test to check if we can find a user by account and display information
         '''
 
-            self.new_user.save_user()
-            test_user = User("Tweeter", "Mercy", "0000") # new user
-            test_user.user()
+        self.new_user.save_user()
+        test_user = User("Tweeter", "Mercy", "0000") # new user
+        test_user.user()
 
         found_user = User.find_by_account("Tweeter")
 
         self.assertEqual(found_user.username,test_user.username)
-
-
     def test_user_exists(self):
         self.new_user.save_user()
         test_user = User("Tweeter", "Mercy", "0000")
@@ -85,16 +83,15 @@ class TestUser(unittest.TestCase):
 
         self.assertEqual(User.display_users(),User.user_list)
 
-      def test_copy_username(self):
-        '''
+    def test_copy_username(self):
+       '''
         Test to confirm that we are copying the username from a found user
         '''
 
-        self.new_user.save_user()
-        User.copy_username("Mercy")
+       self.new_user.save_user()
+       User.copy_username("Mercy")
 
-        self.assertEqual(self.new_user.username,pyperclip.paste())
+       self.assertEqual(self.new_user.username,pyperclip.paste())
 
-
-if __name__ == '__main__':
-    unittest.main()
+    if __name__ == '__main__':
+        unittest.main()
