@@ -86,10 +86,5 @@ class TestUser(unittest.TestCase):
         Test to confirm that we are copying the username from a found user
         '''
 
-       # self.new_user.save_user()
-       # User.copy_username("Mercy")
-       #
-       # self.assertEqual(self.new_user.username,pyperclip.paste())
-
 if __name__ == '__main__':
    unittest.main()
