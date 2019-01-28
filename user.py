@@ -6,3 +6,5 @@ class User:
             self.account = account
             self.username = username
             self.password = password
+
+            contact_list = [] # Empty contact list
