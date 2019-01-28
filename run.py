@@ -37,3 +37,11 @@ def display_users():
     Function that returns all the saved users
     '''
     return User.display_users()
+
+def main():
+    print("Hello Welcome to Password Locker. What is your name?")
+            user_name = input()
+             print(f"Hello {user_name}. what would you like to do?")
+            print('\n')
+            while True:
+                    print("Use these short codes : cc - create a new account, dc - display users, fc -find a user, ex -exit the Password Locker")
