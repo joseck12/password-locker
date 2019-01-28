@@ -43,12 +43,12 @@ class TestUser(unittest.TestCase):
         objects to our contact_list
         '''
         self.new_user.save_user()
-        test_user = User("Tweeter", "Mercy", "0000") # new user
+        test_user = User("Tweeter", "Mercy", "00000") # new user
         test_user.save_user()
         self.assertEqual(len(User.user_list),2)
     def test_delete_user(self):
         self.new_user.save_user()
-        test_user = User("Tweeter", "Mercy", "0000") # new user
+        test_user = User("Tweeter", "Mercy", "00000") # new user
         test_user.save_user()
 
         self.new_user.delete_user()# Deleting a user object
@@ -59,7 +59,7 @@ class TestUser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        test_user = User("Tweeter", "Mercy", "0000") # new user
+        test_user = User("Tweeter", "Mercy", "00000") # new user
         test_user.save_user()
 
         found_user = User.find_by_account("Tweeter")
@@ -67,7 +67,7 @@ class TestUser(unittest.TestCase):
         self.assertEqual(found_user.username,test_user.username)
     def test_user_exists(self):
         self.new_user.save_user()
-        test_user = User("Tweeter", "Mercy", "0000")
+        test_user = User("Tweeter", "Mercy", "00000")
         test_user.save_user()
 
         user_exists = User.user_exist("Tweeter")
