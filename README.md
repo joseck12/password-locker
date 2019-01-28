@@ -1,4 +1,4 @@
-## Password-locker
+# Password-locker
 
 A python application that allows generating and storing of passwords for various accounts.
 
@@ -6,7 +6,7 @@ A python application that allows generating and storing of passwords for various
 
 Joseck Ogachi
 
-# Project Description
+## Project Description
 
 This project will enable users to generate passwords for various accounts and the details stored. Users can generate one or multiple accounts.
 
@@ -22,7 +22,7 @@ To install this project you need the following:
 
 `* A Terminal`
 
-`*Pyhon3.6`
+`*Pyhon3.6 installed`
 
 ## Setup and Installation
 
