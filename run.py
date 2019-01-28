@@ -84,7 +84,7 @@ def main():
                             if check_existing_users(search_username):
                                     search_user = find_user(search_username)
                                     print(f"{search_user.username}")
-                                    print('-' * 10)
+                                    print('-' * 20)
 
                                     # print(f"Phon.......{search_contact.phone_number}")
                                     # print(f"Email address.......{search_contact.email}")
