@@ -91,5 +91,5 @@ class TestUser(unittest.TestCase):
 
        self.assertEqual(self.new_user.username,pyperclip.paste())
 
-    if __name__ == '__main__':
-        unittest.main()
+if __name__ == '__main__':
+   unittest.main()
