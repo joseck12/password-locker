@@ -43,7 +43,7 @@ def main():
     print(f"Hello {user_name}. what would you like to do?")
     print('\n')
     while True:
-                    print("Use these short codes : ca - create a new account, d - display users, fa -find a user, ex -exit the Password Locker")
+                    print("Use these short codes : ca - create a new account, da - display users, fa -find a user, ex -exit the Password Locker")
                     short_code = input('Enter : ').lower()
                     if short_code == 'ca':
                             print("Sign up for Password Locker")
