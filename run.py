@@ -4,14 +4,14 @@ def create_account(account,username,password):
     '''
     Function to create a new account
     '''
-    new_user = Username(account,username,password)
+    new_user = User(account,username,password)
     return new_user
     # save users
-def save_users(user):
+def save_user(user):
     '''
     Function to save users
     '''
-    user.save_users()
+    user.save_user()
     # delete users
 def del_user(user):
     '''
@@ -57,11 +57,10 @@ def main():
                             account = input("Account name: ")
                             username = input("What's your username: ")
                             password = input("Enter your password: ")
-                            save_user = (account,username,password)
                             save_user(User(account, username, password)) # create and save new contact.
-                            print ('\n')
-                            print(f"New User {username} created")
-                            print ('\n')
+                            print ('\033[93m \n')
+                            print(f"Successful new User {username} stored")
+                            print ( '\033[0m \n')
 
                     elif short_code == 'dc':
 
