@@ -38,31 +38,31 @@ Open the project on your terminal and start the python shell
 
 ## Behaviour Driven Development
 
-on the terminal run the following command;
+On the terminal run the following command;
 
  `*./run.py`
 
  Then follow the steps below
 
- **Input**: type ca
+ **Input**: Enter ca
 
 **Output Example**: What is your name?
 
 **Output Example**: Enter your password.
 
- **Input**: type da
+ **Input**: Enter da
 
 **Output Example**: Here is a list of all your users.
 
 **Output Example**: You don't seem to have any users saved yet.
 
- **Input**: type fa
+ **Input**: Enter fa
 
 **Output Example**: Enter username i.e name of account you are searching for.
 
 **Output Example**: That user does not exist.
 
- **Input**: type ex
+ **Input**: Enter ex
 
 **Output Example**: Bye.
 
