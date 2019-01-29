@@ -47,15 +47,16 @@ def main():
                     short_code = input().lower()
 
                     if short_code == 'cc':
-                            print("Account name")
-                            print("-"*10)
+                            print("Which account would you like to open?")
+                            print("Facebook,Instagram,Tweeter")
+                            input()
 
                             print ("User name ....")
-                            f_name = input()
+                            Username = input()
 
                             print("Password ...")
-                            l_name = input()
-                            save_users(create_account(Instagram, username, password)) # create and save new contact.
+                            Password = input()
+                            save_User(User(account, username, password)) # create and save new contact.
                             print ('\n')
                             print(f"New User {username} created")
                             print ('\n')
