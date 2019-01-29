@@ -11,7 +11,7 @@ def save_users(user):
     '''
     Function to save users
     '''
-    user.save_user()
+    user.save_users()
     # delete users
 def del_user(user):
     '''
@@ -44,23 +44,24 @@ def main():
     print('\n')
     while True:
                     print("Use these short codes : cc - create a new account, dc - display users, fc -find a user, ex -exit the Password Locker")
-                    short_code = input().lower()
-
+                    short_code = input('Enter : ').lower()
                     if short_code == 'cc':
-                            print("Which account would you like to open?")
-                            print("Facebook,Instagram,Tweeter")
-                            input()
-
-                            print ("User name ....")
-                            Username = input()
-
-                            print("Password ...")
-                            Password = input()
-                            save_User(User(account, username, password)) # create and save new contact.
+                            print("Sign up for Password Locker")
+                            your_name = input("Enter username: ")
+                            password = input("Enter your password: ")
+                            print('\033[94m')
+                            print( your_name +" " + " Welcome to password Locker!")
+                            print('\033[0m')
+                            print("______________ ")
+                            print("Which account details would you like to store?")
+                            account = input("Account name: ")
+                            username = input("What's your username: ")
+                            password = input("Enter your password: ")
+                            save_user = (account,username,password)
+                            save_user(User(account, username, password)) # create and save new contact.
                             print ('\n')
                             print(f"New User {username} created")
                             print ('\n')
-
 
                     elif short_code == 'dc':
 
