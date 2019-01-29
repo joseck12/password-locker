@@ -24,7 +24,7 @@ def find_user(account):
     Function that finds a user by account and returns the account
     '''
     return User.find_by_account(account)
-    # checkif a contact exists
+    # checkif acount exists
 def check_existing_users(account):
     '''
     Function that check if a user exists with that account and return a Boolean
@@ -43,9 +43,9 @@ def main():
     print(f"Hello {user_name}. what would you like to do?")
     print('\n')
     while True:
-                    print("Use these short codes : cc - create a new account, dc - display users, fc -find a user, ex -exit the Password Locker")
+                    print("Use these short codes : ca - create a new account, d - display users, fa -find a user, ex -exit the Password Locker")
                     short_code = input('Enter : ').lower()
-                    if short_code == 'cc':
+                    if short_code == 'ca':
                             print("Sign up for Password Locker")
                             your_name = input("Enter username: ")
                             password = input("Enter your password: ")
@@ -57,12 +57,12 @@ def main():
                             account = input("Account name: ")
                             username = input("What's your username: ")
                             password = input("Enter your password: ")
-                            save_user(User(account, username, password)) # create and save new contact.
+                            save_user(User(account, username, password)) # create and save new account.
                             print ('\033[93m \n')
                             print(f"Successful new User {username} stored")
                             print ( '\033[0m \n')
 
-                    elif short_code == 'dc':
+                    elif short_code == 'da':
 
                             if display_users():
                                     print("Here is a list of all your users")
@@ -77,7 +77,7 @@ def main():
                                     print("You dont seem to have any users saved yet")
                                     print('\n')
 
-                    elif short_code == 'fc':
+                    elif short_code == 'fa':
 
                             print("Enter the username you want to search for")
 

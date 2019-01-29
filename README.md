@@ -22,7 +22,26 @@ To install this project you need the following:
 
 `* A Terminal`
 
-`*Pyhon3.6 installed`
+`*Python3.6 installed`
+
+## Behaviour Driven Development
+on the terminal run the following command;
+ `*./run.py`
+ Then follow the steps below
+
+ **Input**: type ca
+**Output Example**: What is your name?
+**Output Example**: Enter your password.
+ **Input**: type da
+**Output Example**: Here is a list of all your users.
+**Output Example**: You don't seem to have any users saved yet.
+ **Input**: type fa
+**Output Example**: Enter username i.e name of account you are searching for.
+**Output Example**: That user does not exist.
+ **Input**: type ex
+**Output Example**: Bye.
+**Output Example**: I really didn't get that. Please use the short codes.
+
 
 ## Setup and Installation
 
